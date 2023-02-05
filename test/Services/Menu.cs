@@ -64,10 +64,10 @@ namespace test.Services
             contact.Email = Console.ReadLine() ?? string.Empty;
             Console.Write("Telefonnummer: ");
             contact.PhoneNumber = Console.ReadLine() ?? string.Empty;
-            Console.Write("Adress: ");
+            Console.Write("Adress: ex Storgatan 2, 70210 Örebro: ");
             contact.Address = Console.ReadLine() ?? string.Empty;
 
-            Console.WriteLine("Kontakten skapad");
+            Console.WriteLine("Kontakten är skapad");
 
             contacts.Add(contact);
             File.WriteAllText(jsonFile, JsonConvert.SerializeObject(contacts));
